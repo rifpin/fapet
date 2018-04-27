@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Auth::routes();
+Route::get('/','PageController@index');
+Route::resource('pages','PageController');
+Route::resource('users','UserController',['except'=>['create','store','show']]);
+Route::get('users/delete/{id}',['uses'=>'UserController@delete','as'=>'users.delete']);

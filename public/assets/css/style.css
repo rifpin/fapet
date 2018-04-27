@@ -1,0 +1,198 @@
+.top-header{
+  background-color: #42160B;
+  text-align: right;
+  }
+
+.top-header span{
+  color:white;
+  font-size: 13px;
+  padding-right: 2px;
+}
+
+.top-header a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  padding-right: 15px;
+}
+
+  .navbar-brand {
+    padding: 0px;
+  }
+  .navbar-brand>img {
+    height: 110%;
+    /*padding: 15px;*/
+    padding-bottom: 15px;
+    padding-top: 8px;
+    width: auto;
+  }
+
+  .custom-navbar .navbar-brand {
+    height: 80px;
+  }
+
+  @font-face{
+    font-family:'Gama Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gama-serif-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/gama-serif-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/gama-serif-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gama-serif-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/gama-serif-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/gama-serif-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  .custom-navbar .navbar-brand-title{
+      color:white;
+      float: left;
+      padding-top: 22px;
+      padding-right: 50px;
+      padding-left: 15px;
+      font-size:18px;
+      font-family:'Gama Serif';
+      line-height: 1;
+      text-transform: uppercase;
+  }
+
+  .custom-navbar .nav >li >a {
+    padding-top: 39px;
+    padding-bottom: 21px;
+  }
+  .custom-navbar .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+  }
+
+  .navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 50px;
+  }
+  .navbar-alignit .navbar-brand {
+      top: 50%;
+      display: block;
+      position: relative;
+      height: auto;
+      transform: translate(0,-50%);
+      margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .navbar-nav>li>.dropdown-menu {
+      z-index: 9999;
+  }
+
+
+  /* Navbar Color */
+  .navbar-default {
+    background-color: #791b00;
+    border-color: #42160b;
+  }
+  .navbar-default .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-text {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #42160b;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #42160b;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #42160b;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #42160b;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #42160b;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #ffffff;
+  }
+  .navbar-default .navbar-link {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-link:hover {
+    color: #ffffff;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #42160b;
+    color:#ffffff;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #ffffff;
+      background-color: #42160b;
+    }
+
+    .navbar-brand>img {
+      height: 90%;
+      /*padding: 15px;*/
+      padding-bottom: 8px;
+      padding-top: 20px;
+      padding-left: 5px;
+      width: auto;
+    }
+
+    .custom-navbar .navbar-brand-title{
+      color:white;
+      float: left;
+      padding-top: 28px;
+      padding-right: 0px;
+      padding-left: 5px;
+      font-size:14px;
+      font-family:'Gama-Font';
+      line-height: 1;
+    }
+
+  }
+
+  .footer{
+    background-color: #791B00;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+
+    }
+
+  .footer span{
+    color: #ffffff;
+    text-align: center;
+    font-size:12px;
+    }
