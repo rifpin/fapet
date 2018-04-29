@@ -33,9 +33,12 @@
 							<a href={{route('users.edit',$user->id)}} class="btn btn-xs btn-primary" data-toggle="tooltip" title="Edit / Reset Password / Level">
 								<span class="fa fa-edit"></span>
 							</a>
-							<a href={{route('users.delete',$user->id)}} class="btn btn-xs btn-danger" data-toggle="tooltip" title="Delete / Hapus user">
-								<span class="glyphicon glyphicon-trash"></span>
-							</a>
+							<form method="post" action={{route('users.destroy',$user->id)}} style="display:inline;">
+								{{csrf_field()}} {{method_field('delete')}}
+								<button class="btn btn-danger btn-xs" onClick="return confirm('Hapus data user?');" data-toggle="tooltip" title="Delete / Hapus user">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+							</form>
 					</tr>
 				@endforeach
 			</tbody>

@@ -8,13 +8,21 @@ use App\Role;
 
 class UserController extends Controller
 {
+
+   public function __construct()
+   {
+      $this->middleware('auth');
+   }
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles('admin');
+
         $users=User::orderBy('id','asc')->get();
         return view('users.index')->withUsers($users);
     }
@@ -104,6 +112,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::findOrFail($id);
+        $user->roles()->detach();
+        $user->delete();
+        return redirect()->route('users.index');
     }
 }
